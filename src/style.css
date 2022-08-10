@@ -1,0 +1,76 @@
+body {
+  background-image: url("/shecodes/weather/image/pexels-pixabay-164024.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search-field {
+  padding-top: 60px;
+}
+.current-city {
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+
+.layout {
+  border-radius: 20px;
+}
+
+.city-main {
+  font-family: "Amatic SC", cursive;
+  text-transform: uppercase;
+  font-size: 120px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.day-hour {
+  font-family: "Amatic SC", cursive;
+  text-shadow: 1px 2px 2px black;
+  padding-top: 20px;
+  font-size: 50px;
+  color: white;
+}
+.sun {
+  font-size: 80px;
+  color: #ffc93c;
+  text-shadow: 1px 2px 2px black;
+  text-align: center;
+}
+.temperature-middle {
+  font-family: "Amatic SC", cursive;
+  text-transform: uppercase;
+  font-size: 80px;
+  text-shadow: 1px 2px 2px black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+.weather-info {
+  font-size: 50px;
+  color: white;
+  text-align: right;
+  text-shadow: 1px 2px 2px black;
+  font-family: "Amatic SC", cursive;
+  padding-top: 10px;
+}
+.col-lg-1 {
+  border: 1px solid white;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(145, 125, 69, 0.3);
+  border-radius: 4px;
+}
+.monday {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px black;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#celsius, #fahrenheit {
+    color: #ffc93c;
+    text-decoration: none;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/shecodes/weather/src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf75ed0975.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-group col search-field" id="search-form">
+        <input
+          type="search"
+          class="form-control rounded border-secondary p-3 mt-5 me-1"
+          placeholder="Enter a city..."
+          aria-label="Search"
+          aria-describedby="search-addon"
+          id="search-input"
+        />
+        <button
+          type="button"
+          class="btn btn-outline-success rounded p-3 mt-5 ms-auto me-1 shadow-sm"
+          id="search-button"
+        >
+          Search!
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-warning rounded p-3 mt-5 ms-auto shadow-sm"
+          id="current-location-button"
+        >
+          Current location
+        </button>
+      </div>
+
+      <div class="row current-city">
+        <div class="col-4 city">
+          <h1 class="city-main" id="city-change">Lviv</h1>
+          <h2 class="day-hour" id="current-date-time">Saturday 18:53</h2>
+        </div>
+        <div class="col-4 sun">
+          <i class="fa-solid fa-sun"></i>
+          <br />
+          <h2 class="temperature-middle">
+            <span id="temperature">28 </span>
+            <a href="#" target="_self, _blank" id="celsius">&deg;c</a> /
+            <a href="#" target="_self, _blank" id="fahrenheit">&deg;F</a>
+          </h2>
+        </div>
+        <div class="col-4 weather-info">
+          <h2 class="weather-info" id="weather-general">Sunny</h2>
+          <h2 class="weather-info">Humidity: <span id="humidity">51%</span></h2>
+          <h2 class="weather-info">Wind: <span id="wind-speed">12</span> km/h</h2>
+        </div>
+      </div>
+
+      <div class="row seven-cols layout">
+        <div class="col-lg-1 monday">
+          <h3 class="monday">Mon</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-sun"></i></h2>
+          <hr />
+          <h3 class="monday">34&deg;</h3>
+        </div>
+        <div class="col-lg-1">
+          <h3 class="monday">Tue</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-cloud"></i></h2>
+          <hr />
+          <h3 class="monday">30&deg;</h3>
+        </div>
+        <div class="col-lg-1">
+          <h3 class="monday">Wed</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-cloud-sun-rain"></i></h2>
+          <hr />
+          <h3 class="monday">30&deg;</h3>
+        </div>
+        <div class="col-lg-1">
+          <h3 class="monday">Thu</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-cloud"></i></h2>
+          <hr />
+          <h3 class="monday">28&deg;</h3>
+        </div>
+        <div class="col-lg-1">
+          <h3 class="monday">Fri</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-cloud-sun-rain"></i></h2>
+          <hr />
+          <h3 class="monday">29&deg;</h3>
+        </div>
+        <div class="col-lg-1">
+          <h3 class="monday">Sat</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-sun"></i></h2>
+          <hr />
+          <h3 class="monday">30&deg;</h3>
+        </div>
+        <div class="col-lg-1">
+          <h3 class="monday">Sun</h3>
+          <hr />
+          <h2 class="monday"><i class="fa-solid fa-sun"></i></h2>
+          <hr />
+          <h3 class="monday">31&deg;</h3>
+        </div>
+      </div>
+    </div>
+    <script src="/shecodes/weather/src/script.js"></script>
+  </body>
+</html>
