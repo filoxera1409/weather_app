@@ -3,6 +3,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.link-github {
+  font-size: 46px;
+  text-decoration: none;
+  color: yellow;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 1px 1px 1px black;
+}
 .search-field {
   padding-top: 60px;
 }
