@@ -1,5 +1,5 @@
 body {
-  background-image: url("/shecodes/weather/image/pexels-pixabay-164024.jpg");
+  background-image: url("/image/pexels-pixabay-164024.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -70,7 +70,8 @@ body {
   font-size: 40px;
   text-transform: uppercase;
 }
-#celsius, #fahrenheit {
-    color: #ffc93c;
-    text-decoration: none;
+#celsius,
+#fahrenheit {
+  color: #ffc93c;
+  text-decoration: none;
 }
