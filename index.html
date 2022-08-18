@@ -8,12 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
       rel="stylesheet"
     />
@@ -22,12 +16,6 @@
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"
-      rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/bf75ed0975.js"
@@ -38,9 +26,6 @@
   </head>
   <body>
     <div class="container">
-      <a href="https://github.com/filoxera1409/weather_app" target="_blank" class="link-github"
-        >Link to GitHub</a
-      >
       <div class="input-group col search-field" id="search-form">
         <input
           type="search"
@@ -69,14 +54,14 @@
       <div class="row current-city">
         <div class="col-4 city">
           <h1 class="city-main" id="city-change">Lviv</h1>
-          <h2 class="day-hour" id="current-date-time">Saturday 18:53</h2>
+          <h2 class="day-hour" id="date"></h2>
         </div>
-        <div class="col-4 sun">
-          <i class="fa-solid fa-sun"></i>
+        <div class="col-4 sun"><img src="http://openweathermap.org/img/wn/11d@2x.png" alt="" class="icon">
+          <!-- <i class="fa-solid fa-sun icon"></i> -->
           <br />
           <h2 class="temperature-middle">
             <span id="temperature">28 </span>
-            <a href="#" target="_self, _blank" id="celsius">&deg;c</a> /
+            <a href="#" target="_self, _blank" id="celsius">&deg;c </a>|
             <a href="#" target="_self, _blank" id="fahrenheit">&deg;F</a>
           </h2>
         </div>
@@ -84,63 +69,67 @@
           <h2 class="weather-info" id="weather-general">Sunny</h2>
           <h2 class="weather-info">Humidity: <span id="humidity">51%</span></h2>
           <h2 class="weather-info">
-            Wind: <span id="wind-speed">12</span> km/h
+            Wind: <span id="wind-speed">12 </span> km/h
           </h2>
         </div>
       </div>
-
       <div class="row seven-cols layout">
-        <div class="col-lg-1 monday">
-          <h3 class="monday">Mon</h3>
+        <div class="col-lg-1">
+          <h3 class="monday day-color">Mon</h3>
           <hr />
           <h2 class="monday"><i class="fa-solid fa-sun"></i></h2>
           <hr />
-          <h3 class="monday">34&deg;</h3>
+          <h3 class="monday degree-color">34&deg;</h3>
         </div>
         <div class="col-lg-1">
-          <h3 class="monday">Tue</h3>
+          <h3 class="monday day-color">Tue</h3>
           <hr />
           <h2 class="monday"><i class="fa-solid fa-cloud"></i></h2>
           <hr />
-          <h3 class="monday">30&deg;</h3>
+          <h3 class="monday degree-color">30&deg;</h3>
         </div>
         <div class="col-lg-1">
-          <h3 class="monday">Wed</h3>
+          <h3 class="monday day-color">Wed</h3>
           <hr />
-          <h2 class="monday"><i class="fa-solid fa-cloud-sun-rain"></i></h2>
+          <h2 class="monday "><i class="fa-solid fa-cloud-sun-rain"></i></h2>
           <hr />
-          <h3 class="monday">30&deg;</h3>
+          <h3 class="monday degree-color">30&deg;</h3>
         </div>
         <div class="col-lg-1">
-          <h3 class="monday">Thu</h3>
+          <h3 class="monday day-color">Thu</h3>
           <hr />
           <h2 class="monday"><i class="fa-solid fa-cloud"></i></h2>
           <hr />
-          <h3 class="monday">28&deg;</h3>
+          <h3 class="monday degree-color">28&deg;</h3>
         </div>
         <div class="col-lg-1">
-          <h3 class="monday">Fri</h3>
+          <h3 class="monday day-color">Fri</h3>
           <hr />
           <h2 class="monday"><i class="fa-solid fa-cloud-sun-rain"></i></h2>
           <hr />
-          <h3 class="monday">29&deg;</h3>
+          <h3 class="monday degree-color">29&deg;</h3>
         </div>
         <div class="col-lg-1">
-          <h3 class="monday">Sat</h3>
+          <h3 class="monday day-color">Sat</h3>
           <hr />
           <h2 class="monday"><i class="fa-solid fa-sun"></i></h2>
           <hr />
-          <h3 class="monday">30&deg;</h3>
+          <h3 class="monday degree-color">30&deg;</h3>
         </div>
         <div class="col-lg-1">
-          <h3 class="monday">Sun</h3>
+          <h3 class="monday day-color">Sun</h3>
           <hr />
           <h2 class="monday"><i class="fa-solid fa-sun"></i></h2>
           <hr />
-          <h3 class="monday">31&deg;</h3>
+          <h3 class="monday degree-color">31&deg;</h3>
         </div>
       </div>
     </div>
+    <div class="link-box"><a
+      href="https://github.com/filoxera1409/weather_app"
+      target="_blank"
+      class="link-github"
+      >Open-source code</a></div>
     <script src="./src/script.js"></script>
   </body>
 </html>

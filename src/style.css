@@ -1,14 +1,56 @@
+* {
+  font-family: "Amatic SC", cursive;
+  /* text-shadow: 1px 2px 2px black; */
+  text-transform: uppercase;
+}
 body {
-  background-image: url("../image/pexels-pixabay-164024.jpg");
+  background-image: url("../image/06.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.link-github {
-  font-size: 46px;
-  text-decoration: none;
-  color: yellow;
-  font-family: "Amatic SC", cursive;
-  text-shadow: 1px 1px 1px black;
+#search-form {
+ padding: 20px 0px 0px;
+}
+#search-input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: none;
+}
+hr {
+  background-color: white;
+}
+#search-button,
+#current-location-button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: none;
+  border: 1px solid #ffc93c;
+  color: #2d5ac1;
+  background-color: #ffc93c;
+}
+#search-button {
+  border: 1px solid #2d5ac1;
+  color: #ffc93c;
+  background-color: #2d5ac1;
+  
+}
+#search-button:hover {
+  border: 1px solid #ffc93c;
+}
+#search-button:focus {
+  border: 2px solid #ffc93c;
+}
+
+#current-location-button:hover {
+  border: 1px solid #2d5ac1;
+}
+#current-location-button:focus {
+  border: 2px solid #2d5ac1;
+}
+#humidity,
+#wind-speed,
+#temperature {
+  color: #ffc93c;
 }
 .search-field {
   padding-top: 60px;
@@ -17,21 +59,17 @@ body {
   padding-top: 60px;
   margin-bottom: 80px;
 }
-
 .layout {
   border-radius: 20px;
 }
-
 .city-main {
-  font-family: "Amatic SC", cursive;
   text-transform: uppercase;
   font-size: 120px;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 .day-hour {
-  font-family: "Amatic SC", cursive;
-  text-shadow: 1px 2px 2px black;
+  text-shadow: 2px 2px 2px black;
   padding-top: 20px;
   font-size: 50px;
   color: white;
@@ -39,14 +77,15 @@ body {
 .sun {
   font-size: 80px;
   color: #ffc93c;
-  text-shadow: 1px 2px 2px black;
   text-align: center;
 }
+.icon {
+  scale: 1.2;
+}
 .temperature-middle {
-  font-family: "Amatic SC", cursive;
   text-transform: uppercase;
   font-size: 80px;
-  text-shadow: 1px 2px 2px black;
+  text-shadow: 2px 2px 2px black;
   color: white;
   text-align: center;
   padding-top: 20px;
@@ -55,30 +94,51 @@ body {
   font-size: 50px;
   color: white;
   text-align: right;
-  text-shadow: 1px 2px 2px black;
-  font-family: "Amatic SC", cursive;
+  text-shadow: 2px 2px 2px black;
   padding-top: 10px;
 }
 .col-lg-1 {
   border: 1px solid white;
-  color: white;
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgba(145, 125, 69, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
 .monday {
-  font-family: "Amatic SC", cursive;
   color: white;
   font-weight: bold;
-  text-shadow: 1px 2px 2px black;
+  text-shadow: 2px 2px 2px black;
   font-size: 40px;
   text-transform: uppercase;
 }
+#temperature {
+  color: white;
+}
 #celsius,
 #fahrenheit {
-  color: #ffc93c;
   text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+}
+#fahrenheit {
+  color: #ffc93c;
+}
+.link-github {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.link-github:hover, #celsius:hover {
+  color: #ffc93c;
+}
+#fahrenheit:hover {
+  color: #2d5ac1;
+}
+.link-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 0 0;
 }
